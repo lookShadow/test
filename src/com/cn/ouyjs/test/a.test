@@ -1,0 +1,133 @@
+Classfile /C:/me/project/com-cn-text/src/com/cn/ouyjs/test/MapTest.class
+  Last modified 2019Äê7ÔÂ30ÈÕ; size 948 bytes
+  MD5 checksum 8bf8a418050e95e7c789a73fc26715b5
+  Compiled from "MapTest.java"
+public class com.cn.ouyjs.test.MapTest
+  minor version: 0
+  major version: 55
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #15                         // com/cn/ouyjs/test/MapTest
+  super_class: #16                        // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 1
+Constant pool:
+   #1 = Methodref          #16.#25        // java/lang/Object."<init>":()V
+   #2 = Class              #26            // java/util/HashMap
+   #3 = Methodref          #2.#25         // java/util/HashMap."<init>":()V
+   #4 = Fieldref           #27.#28        // java/lang/System.out:Ljava/io/PrintStream;
+   #5 = Methodref          #29.#30        // java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+   #6 = InterfaceMethodref #31.#32        // java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+   #7 = Class              #33            // java/lang/String
+   #8 = Methodref          #34.#35        // java/io/PrintStream.println:(Ljava/lang/String;)V
+   #9 = Methodref          #36.#37        // java/time/LocalDate.now:()Ljava/time/LocalDate;
+  #10 = Methodref          #34.#38        // java/io/PrintStream.println:(Ljava/lang/Object;)V
+  #11 = String             #39            // 2019-04-19
+  #12 = Methodref          #36.#40        // java/time/LocalDate.parse:(Ljava/lang/CharSequence;)Ljava/time/LocalDate;
+  #13 = Methodref          #36.#41        // java/time/LocalDate.plusDays:(J)Ljava/time/LocalDate;
+  #14 = Methodref          #36.#42        // java/time/LocalDate.minusDays:(J)Ljava/time/LocalDate;
+  #15 = Class              #43            // com/cn/ouyjs/test/MapTest
+  #16 = Class              #44            // java/lang/Object
+  #17 = Utf8               <init>
+  #18 = Utf8               ()V
+  #19 = Utf8               Code
+  #20 = Utf8               LineNumberTable
+  #21 = Utf8               main
+  #22 = Utf8               ([Ljava/lang/String;)V
+  #23 = Utf8               SourceFile
+  #24 = Utf8               MapTest.java
+  #25 = NameAndType        #17:#18        // "<init>":()V
+  #26 = Utf8               java/util/HashMap
+  #27 = Class              #45            // java/lang/System
+  #28 = NameAndType        #46:#47        // out:Ljava/io/PrintStream;
+  #29 = Class              #48            // java/lang/Integer
+  #30 = NameAndType        #49:#50        // valueOf:(I)Ljava/lang/Integer;
+  #31 = Class              #51            // java/util/Map
+  #32 = NameAndType        #52:#53        // get:(Ljava/lang/Object;)Ljava/lang/Object;
+  #33 = Utf8               java/lang/String
+  #34 = Class              #54            // java/io/PrintStream
+  #35 = NameAndType        #55:#56        // println:(Ljava/lang/String;)V
+  #36 = Class              #57            // java/time/LocalDate
+  #37 = NameAndType        #58:#59        // now:()Ljava/time/LocalDate;
+  #38 = NameAndType        #55:#60        // println:(Ljava/lang/Object;)V
+  #39 = Utf8               2019-04-19
+  #40 = NameAndType        #61:#62        // parse:(Ljava/lang/CharSequence;)Ljava/time/LocalDate;
+  #41 = NameAndType        #63:#64        // plusDays:(J)Ljava/time/LocalDate;
+  #42 = NameAndType        #65:#64        // minusDays:(J)Ljava/time/LocalDate;
+  #43 = Utf8               com/cn/ouyjs/test/MapTest
+  #44 = Utf8               java/lang/Object
+  #45 = Utf8               java/lang/System
+  #46 = Utf8               out
+  #47 = Utf8               Ljava/io/PrintStream;
+  #48 = Utf8               java/lang/Integer
+  #49 = Utf8               valueOf
+  #50 = Utf8               (I)Ljava/lang/Integer;
+  #51 = Utf8               java/util/Map
+  #52 = Utf8               get
+  #53 = Utf8               (Ljava/lang/Object;)Ljava/lang/Object;
+  #54 = Utf8               java/io/PrintStream
+  #55 = Utf8               println
+  #56 = Utf8               (Ljava/lang/String;)V
+  #57 = Utf8               java/time/LocalDate
+  #58 = Utf8               now
+  #59 = Utf8               ()Ljava/time/LocalDate;
+  #60 = Utf8               (Ljava/lang/Object;)V
+  #61 = Utf8               parse
+  #62 = Utf8               (Ljava/lang/CharSequence;)Ljava/time/LocalDate;
+  #63 = Utf8               plusDays
+  #64 = Utf8               (J)Ljava/time/LocalDate;
+  #65 = Utf8               minusDays
+{
+  public com.cn.ouyjs.test.MapTest();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 11: 0
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=4, locals=3, args_size=1
+         0: new           #2                  // class java/util/HashMap
+         3: dup
+         4: invokespecial #3                  // Method java/util/HashMap."<init>":()V
+         7: astore_1
+         8: getstatic     #4                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        11: aload_1
+        12: iconst_1
+        13: invokestatic  #5                  // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        16: invokeinterface #6,  2            // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+        21: checkcast     #7                  // class java/lang/String
+        24: invokevirtual #8                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        27: getstatic     #4                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        30: invokestatic  #9                  // Method java/time/LocalDate.now:()Ljava/time/LocalDate;
+        33: invokevirtual #10                 // Method java/io/PrintStream.println:(Ljava/lang/Object;)V
+        36: ldc           #11                 // String 2019-04-19
+        38: astore_2
+        39: getstatic     #4                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        42: aload_2
+        43: invokestatic  #12                 // Method java/time/LocalDate.parse:(Ljava/lang/CharSequence;)Ljava/time/LocalDate;
+        46: lconst_1
+        47: invokevirtual #13                 // Method java/time/LocalDate.plusDays:(J)Ljava/time/LocalDate;
+        50: invokevirtual #10                 // Method java/io/PrintStream.println:(Ljava/lang/Object;)V
+        53: getstatic     #4                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        56: aload_2
+        57: invokestatic  #12                 // Method java/time/LocalDate.parse:(Ljava/lang/CharSequence;)Ljava/time/LocalDate;
+        60: lconst_1
+        61: invokevirtual #14                 // Method java/time/LocalDate.minusDays:(J)Ljava/time/LocalDate;
+        64: invokevirtual #10                 // Method java/io/PrintStream.println:(Ljava/lang/Object;)V
+        67: return
+      LineNumberTable:
+        line 13: 0
+        line 14: 8
+        line 16: 27
+        line 18: 36
+        line 19: 39
+        line 20: 53
+        line 21: 67
+}
+SourceFile: "MapTest.java"
