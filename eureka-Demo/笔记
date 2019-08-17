@@ -1,0 +1,4 @@
+启动顺序:eurekaApplication->ServerApplication->ClientApplication
+测试路径:EureKa:http://localhost:8800/
+        Server:http://localhost:8701/Hello/World?s=1
+        Client:http://localhost:8702/test/Consumer?s=1

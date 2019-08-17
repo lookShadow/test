@@ -1,0 +1,43 @@
+#server:
+#  port: 8761
+#
+#eureka:
+#  instance:
+#    hostname: localhost
+#    client:
+#      registerWithEureka: false
+#      fetchRegistry: false
+#        serviceUrl:
+#          defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+server:
+  port: 8800
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    serviceUrl:
+      #      defaultZone: http://${security.user.name}:${security.user.password}@${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://localhost:8800/eureka/
+# 新版本 2.0版本配置方法
+spring:
+  application:
+    name: eureka-server
+#  security:
+#    basic:
+#      enabled: true
+#    user:
+#      name: admin
+#      password: admin
+# 旧版本
+#spring:
+#  application:
+#    name: eureka-server
+#security:
+#  basic:
+#    enabled: true
+#  user:
+#    name: admin
+#    password: admin
