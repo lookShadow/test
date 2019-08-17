@@ -62,7 +62,13 @@
           <artifactId>poi</artifactId>
           <version>3.15</version>
         </dependency>-->
-
+    <!--单元测试-->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <version>1.5.6.RELEASE</version>
+      <scope>test</scope>
+    </dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
