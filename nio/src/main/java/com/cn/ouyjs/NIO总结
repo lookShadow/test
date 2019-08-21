@@ -1,0 +1,15 @@
+注意点:
+
+ServerSocketChannel
+SocketChannel
+服务器必须先建立ServerSocketChannel 来等待客户端的连接
+客户端必须建立相对应的SocketChannel来与服务器建立连接
+服务器接受到客户端的连接受，再生成一个SocketChannel与此客户端通信
+也就是说SocketChannel相对来说多了一个通信功能
+
+# buffer.flip();一定得有，如果没有，就是从文件最后开始读取的，当然读出来的都是byte=0时候的字符。
+# 通过buffer.flip();这个语句，就能把buffer的当前位置更改为buffer缓冲区的第一个位置。
+byteBuffer.flip();
+
+# 设置为非阻塞模式
+ socketChannel.configureBlocking(false);

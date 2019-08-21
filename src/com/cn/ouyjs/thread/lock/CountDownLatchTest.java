@@ -1,6 +1,8 @@
 package com.cn.ouyjs.thread.lock;
 
 import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 /**
  * @author ouyjs
@@ -10,10 +12,13 @@ import java.util.concurrent.CountDownLatch;
 public class CountDownLatchTest {
 
     public static void main(String[] args) {
-        CountDownLatch countDownLatch = new CountDownLatch(10);
-        for (int i = 0; i< 10 ; i++) {
-            new Thread(new MyThread(countDownLatch)).start();
-            countDownLatch.countDown();
-        }
+        ExecutorService threadPool = Executors.newFixedThreadPool(3);
+        CountDownLatch countDownLatch = new CountDownLatch(2);
+        threadPool.execute(new MyThread(countDownLatch));
+        threadPool.execute(new MyThread(countDownLatch));
+        threadPool.execute(new MyThread(countDownLatch));
+        threadPool.execute(new MyThread(countDownLatch));
+        threadPool.execute(new MyThread(countDownLatch));
+        threadPool.execute(new MyThread(countDownLatch));
     }
 }
