@@ -1,5 +1,6 @@
-package com.cn.ouyjs.netty;
+package com.cn.ouyjs.netty.firstexample;
 
+import com.cn.ouyjs.netty.firstexample.TextServerInitializer;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.EventLoopGroup;
