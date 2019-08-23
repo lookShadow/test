@@ -11,8 +11,8 @@ package com.cn.ouyjs.calssLoad;
  * 4.方法依赖其他类,先初始化方法类,在初始化"其他类"
  * 5.动态语言支持
  */
-public class ClassLoadTest {
-    public ClassLoadTest() {
+public class ClassLoaderTest {
+    public ClassLoaderTest() {
         System.out.println("ClassLoadTest");
     }
 

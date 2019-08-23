@@ -3,6 +3,7 @@ package com.cn.ouyjs.calssLoad;
 /**
  * @author ouyjs
  * @date 2019/8/21 17:29
+ * 热部署
  */
 public class HostLoad extends ClassLoader {
 

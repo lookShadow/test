@@ -1,4 +1,5 @@
-package com.cn.ouyjs.test;
+package com.cn.ouyjs.calssLoad;
+
 
 /**
  * @author ouyjs
@@ -11,6 +12,6 @@ public class Test {
     }
 
     public static void main(String[] args) {
-        ClassLoadTest.classLoadTest();
+        ClassLoaderTest.classLoadTest();
     }
 }
