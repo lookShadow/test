@@ -14,7 +14,7 @@
     <bytecodeTargetLevel>
       <module name="eureka" target="11" />
       <module name="nio" target="11" />
-      <module name="test" target="1.5" />
+      <module name="test" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
